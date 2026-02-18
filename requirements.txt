@@ -5,30 +5,32 @@
 
 # --- CORE MATHEMATICS / MATEMÁTICA CENTRAL ---
 # Used for tensor calculus, vector fields, and linear algebra.
-# Usado para cálculo tensorial, campos vetoriais e álgebra linear.
 numpy>=1.24.0
 
 # --- DATA PROCESSING / PROCESSAMENTO DE DADOS ---
-# Handling large astronomical catalogs (Pantheon+, SPARC).
-# Manipulação de grandes catálogos astronômicos (Pantheon+, SPARC).
+# Handling large astronomical catalogs (Pantheon+, SPARC, SDSS).
 pandas>=2.0.0
 
 # --- SCIENTIFIC COMPUTING / COMPUTAÇÃO CIENTÍFICA ---
 # Statistical tests (Z-score, Chi-square) and optimization (Least Squares).
-# Testes estatísticos (Z-score, Qui-quadrado) e otimização (Mínimos Quadrados).
 scipy>=1.10.0
 
 # --- ASTRONOMY TOOLKIT / FERRAMENTAS ASTRONÔMICAS ---
 # Reading .FITS files (SDSS), celestial coordinates (RA/Dec), and unit conversion.
-# Leitura de arquivos .FITS (SDSS), coordenadas celestes (RA/Dec) e conversão de unidades.
 astropy>=5.3.0
 
 # --- VISUALIZATION / VISUALIZAÇÃO ---
 # Generating histograms, skymaps, and correlation plots.
-# Geração de histogramas, mapas celestes e gráficos de correlação.
 matplotlib>=3.7.0
 
+# --- AUDIT REPORTING / RELATÓRIOS DE AUDITORIA ---
+# For automated generation of scientific PDF reports from the engine.
+fpdf>=1.7.2
+
+# --- INTERACTIVE ENGINE / MOTOR INTERATIVO ---
+# Required for running the TRR Cosmological Engine (Streamlit app).
+streamlit>=1.25.0
+
 # --- OPTIONAL MODULES / MÓDULOS OPCIONAIS ---
-# For CMB multipole analysis (Planck Sat).
-# Para análise de multipolos da CMB (Satélite Planck).
+# For CMB multipole analysis (Planck Sat) and HEALPix mapping.
 # healpy>=1.16.0
