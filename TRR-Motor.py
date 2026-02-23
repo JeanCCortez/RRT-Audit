@@ -24,7 +24,7 @@ def calcular_D_A(z1, z2):
     return ((299792.458 / 70.0) * integral / (1 + z2)) * 3.086e22
 
 # ==========================================
-# DICIONÁRIO ABSOLUTO (SEM LOOPS)
+# DICIONÁRIO ABSOLUTO 
 # ==========================================
 LANG = {
     "PT": {
@@ -520,3 +520,4 @@ else:
             st.success(f"**{L['loc_gap']}:** {loc_str_ui}")
             with st.expander(L["details"]): st.info(L["rep_str_text"].format(loc_str=loc_str_ui, **res))
             st.download_button(L["pdf_btn"], data=gerar_pdf("str", res, L), file_name="Report_Streams.pdf", mime="application/pdf", use_container_width=True, key="p4")
+
