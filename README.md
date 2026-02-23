@@ -5,11 +5,12 @@
 
 ## 🚀 Motor Cosmológico TRR / RRT Cosmological Engine (Interactive Audit)
 Para facilitar a auditoria imediata sem necessidade de ambiente Python local, disponibilizamos o Motor TRR (Streamlit App).
-To facilitate immediate auditing without the need for a local Python environment, we provide the RRT Engine (Streamlit App).
+*To facilitate immediate auditing without the need for a local Python environment, we provide the RRT Engine (Streamlit App).*
 
-Acesso / Access: https://trr-motor.streamlit.app/
+**🔗 Acesso / Access:** [https://trr-motor.streamlit.app/](https://trr-motor.streamlit.app/)
 
-Função / Function: Validação de curvas de rotação galáctica e lentes gravitacionais com emissão de relatórios técnicos de auditoria que quantificam a falha do modelo ΛCDM. / Validation of galactic rotation curves and gravitational lensing, generating technical audit reports that quantify the failure of the ΛCDM model.
+**Função / Function:** Validação de Dinâmica Galáctica (SPARC), Óptica Cosmológica Integrada, Predição Cega de Redshift (SLACS) e Predição Determinística de Ruptura em Correntes Estelares (Gaia). O motor emite relatórios técnicos de auditoria em PDF que quantificam as falhas matemáticas do modelo $\Lambda$CDM.
+*Validation of Galactic Dynamics (SPARC), Integrated Cosmological Optics, Blind Redshift Prediction (SLACS), and Deterministic Stream Rupture Prediction (Gaia). The engine generates technical PDF audit reports quantifying the mathematical failures of the $\Lambda$CDM model.*
 
 ---
 
@@ -20,32 +21,32 @@ Este repositório contém a infraestrutura computacional e os algoritmos de audi
 
 A tese está estruturada em **quatro volumes**, estabelecendo que o universo opera em regimes distintos de viscosidade causal:
 1. **Fase 1 (Saturada):** Regime de alta densidade (Sistema Solar, CERN) onde a TRR é blindada, recuperando a Relatividade Geral e o Modelo Padrão.
-2. **Fase 2 (Transição):** Regime de densidade crítica (Halos Galácticos) onde a viscosidade gera curvas de rotação planas (SPARC).
-3. **Fase 3 (Viscosa):** Regime de vácuo profundo (Vazios Cósmicos) onde o fluxo temporal impulsiona a expansão acelerada.
+2. **Fase 2 (Transição):** Regime de densidade crítica (Halos Galácticos e Lentes Gravitacionais) onde a viscosidade ($\beta$) gera o arrasto que sustenta órbitas e amplifica a deflexão óptica.
+3. **Fase 3 (Viscosa):** Regime de vácuo profundo (Vazios Cósmicos) onde o fluxo temporal impulsiona a expansão acelerada e gera a Anisotropia Topológica.
 
 ### 🇺🇸 English
 This repository hosts the computational infrastructure and statistical audit algorithms used to validate the **Referential Relativity Theory (RRT)**. RRT proposes a hydrodynamic reformulation of spacetime based on **Thermodynamic Phase Transitions**. The theory replaces hypothetical entities (Dark Matter and Dark Energy) with a viscous temporal field ($\mathcal{T}_{\mu\nu}$) whose interaction with matter is governed by local energy density ($\rho$).
 
 The thesis is structured across **four volumes**, establishing that the universe operates in distinct regimes of causal viscosity:
 1. **Phase 1 (Saturated):** High-density regime (Solar System, CERN) where RRT is shielded, recovering General Relativity and the Standard Model.
-2. **Phase 2 (Transition):** Critical density regime (Galactic Halos) where viscosity generates flat rotation curves (SPARC).
-3. **Phase 3 (Viscous):** Deep vacuum regime (Cosmic Voids) where temporal flow drives accelerated expansion.
+2. **Phase 2 (Transition):** Critical density regime (Galactic Halos and Gravitational Lenses) where viscosity ($\beta$) generates the drag that sustains orbits and amplifies optical deflection.
+3. **Phase 3 (Viscous):** Deep vacuum regime (Cosmic Voids) where temporal flow drives accelerated expansion and generates Topological Anisotropy.
 
 ---
 
 ## 📂 Organização dos Módulos / Module Organization
 
-1. **Cosmology Core (`/core_cosmology`):**
+1. **Core Cosmological Audits (`/Core Cosmological Audits`):**
     * Algoritmos de processamento de grandes catálogos (SDSS DR16Q, Pantheon+, Planck) para extração de significância estatística e validação da Rotação de Cortez ($\omega_p$).
-    * *Focus: Statistical significance and Cortez Rotation validation.*
 
-2. **Experimental & Robustness (`/experimental_robustness`):**
+2. **Experimental & Robustness (`/Experimental & Robustness`):**
     * Testes de nulidade em ambientes de alta densidade (LAGEOS-2, CMS/CERN) e simulações de dinâmica galáctica (SPARC). Confirmação da **isotropia local** e da validade da Fase 1 (Saturação).
-    * *Focus: Null tests, local isotropy confirmation, and galactic dynamics simulations.*
 
-3. **Critical Falsification Tests (`/critical_falsification`):**
-    * **Munição de Estresse:** Algoritmos desenhados para testar os limites físicos do Modelo Padrão ($\Lambda$CDM). Inclui testes de Causalidade de Eddington e Auditoria Topológica.
-    * *Focus: Stress tests for Standard Model ($\Lambda$CDM) physical limits, including Eddington Causality and Axis Topological Audit.*
+3. **Critical Falsification Tests (`/Critical Falsification Tests`):**
+    * Algoritmos desenhados para testar os limites físicos do Modelo Padrão. Inclui testes de Causalidade de Eddington, Anisotropia de Ondas Gravitacionais e o **Oráculo Interativo de Anisotropia** (Eixo Cortez).
+
+4. **Official Validation Reports (`/Official_Validation_Reports`):** *(NOVO)*
+    * Repositório das **Predições Cegas ("Eclipse de 1919")** e calibrações geradas pelo Motor TRR. Contém os PDFs oficiais atestando a recuperação precisa de Redshifts (SLACS) e as coordenadas predatórias de ruptura (Gaps) em Correntes Estelares (Gaia).
 
 ---
 
@@ -55,37 +56,34 @@ Para garantir a **reprodutibilidade independente**, este projeto utiliza exclusi
 *To ensure **independent reproducibility**, this project exclusively uses raw public data from official repositories. No data was manually pre-processed to favor the theory.*
 
 **Instrução ao Auditor / Auditor Instruction:**
-Recomenda-se baixar os arquivos listados abaixo diretamente das fontes oficiais.
-*It is recommended to download the files listed below directly from official sources.*
-
 1. **Pantheon+SH0ES:** [GitHub Oficial](https://github.com/PantheonPlusSH0ES/Data_Release)
-2. **SDSS DR16Q:** [SDSS eBOSS Algorithms](https://www.sdss.org/dr16/algorithms/qso_catalog/) (`DR16Q_Superset_v3.fits`)
+2. **SDSS DR16Q:** [SDSS eBOSS Algorithms](https://www.sdss.org/dr16/algorithms/qso_catalog/)
 3. **SPARC Database:** [Case Western Reserve University](http://astroweb.cwru.edu/SPARC/)
-4. **Planck 2018:** [ESA Planck Legacy Archive](https://pla.esac.esa.int/) (Mapa SMICA)
+4. **SLACS Lens Survey:** [Sloan Lens ACS Survey](https://www.slacs.org/) *(Massa Total Salpeter IMF)*
+5. **Gaia Stellar Streams:** ESA/Gaia Consortium *(Pericentros e Apocentros Astrométricos)*
 
 ---
 
-## 📋 Tabela de Scripts e Evidências / Scripts & Evidence Table
+## 📋 Tabela de Scripts e Evidências Principais / Main Scripts & Evidence Table
 
-| Script Name | Alvo / Target | Fase (Regime) | Resultado / Result |
+| Script/Module | Alvo / Target | Fase (Regime) | Resultado / Result |
 | :--- | :--- | :--- | :--- |
 | `trr_sdss_dr16q_51sigma_audit.py` | SDSS DR16Q | **Fase 3** | **51.73σ (Anisotropy)** |
+| `Motor TRR (Aba Redshift)` | Lentes SLACS | **Fase 2** | **Convergiu sem Matéria Escura ($\Delta z \le 0.13$)** |
+| `Motor TRR (Aba Correntes)` | Correntes Gaia | **Fase 2** | **Predição de Coordenadas Exatas de Ruptura** |
 | `trr_pantheon_plus_gradient.py` | Pantheon+ | **Fase 2/3** | **25.47σ (Gradient)** |
-| `trr_planck_cmb_alignment.py` | Planck (CMB) | **Fase 3** | **98.36% Alignment** |
 | `trr_sparc_rotation_curves.py` | SPARC | **Fase 2** | **1.33% Error (Residual)** |
 | `trr_ruptura_cronologia.py` | Quasars $z > 5$ | **Fase 3** | **100% Causal Violation (ΛCDM)** |
-| `trr_fadiga_gravitacional.py` | LIGO / GW | **Impedância** | **23% Distance Divergence** |
-| `trr_cern_cms_isotropy_test.py` | CERN/CMS | **Fase 1** | **Isotrópico / Null** |
-| `trr_lageos_pnb_shielding.py` | LAGEOS-2 | **Fase 1** | **0.22σ (Shielded)** |
+| `trr_lageos_pnb_shielding.py` | LAGEOS-2 | **Fase 1** | **0.22σ (Shielded / Null)** |
 
-> **Nota de Auditoria:** Os resultados de **51.73σ** e a falha de causalidade em quasares foram validados sob o protocolo de **Hubble Detrending**, isolando o sinal viscoso puro de artefatos de expansão métrica.
+> **Nota de Auditoria:** Os resultados preditivos para Lentes Gravitacionais (SLACS) dispensam o uso de halo escuro e exigem estritamente a "Massa Bariônica Total" (Salpeter) como matriz de arrasto fluido, provando a ruptura da Relatividade Geral Clássica na deflexão óptica.
 
 ---
 
 ### 🛠️ Requisitos Técnicos / Technical Requirements
-Utilize **Python 3.11+** com as bibliotecas: `numpy`, `scipy`, `pandas`, `astropy`, `matplotlib` e `fpdf`.
+Utilize **Python 3.11+** com as bibliotecas: `streamlit`, `numpy`, `scipy`, `pandas`, `astropy`, `matplotlib` e `fpdf`.
 
 ---
-**Autor / Author:** Jean Coutinho Cortez
-**Local / Location:** Rio de Janeiro, Brasil 🇧🇷
-**Data / Date:** Janeiro / January 2026
+**Autor / Author:** Jean Coutinho Cortez  
+**Local / Location:** Rio de Janeiro, Brasil 🇧🇷  
+**Data / Date:** Fevereiro / February 2026
