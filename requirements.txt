@@ -1,36 +1,36 @@
 # TRR Audit Framework - Dependencies
-# Teoria da Relatividade Referencial - Dependências de Auditoria
+# Referential Relativity Theory - Scientific Audit Repository
 # Author: Jean Coutinho Cortez
-# Date: Jan 2026
+# Date: February 2026
 
-# --- CORE MATHEMATICS / MATEMÁTICA CENTRAL ---
-# Used for tensor calculus, vector fields, and linear algebra.
+# --- CORE MATHEMATICS ---
+# Used for tensor calculus, vector fields, fluid dynamics, and linear algebra.
 numpy>=1.24.0
 
-# --- DATA PROCESSING / PROCESSAMENTO DE DADOS ---
-# Handling large astronomical catalogs (Pantheon+, SPARC, SDSS).
+# --- DATA PROCESSING ---
+# Handling large astronomical catalogs (Pantheon+, SPARC, SDSS, Gaia, SLACS).
 pandas>=2.0.0
 
-# --- SCIENTIFIC COMPUTING / COMPUTAÇÃO CIENTÍFICA ---
-# Statistical tests (Z-score, Chi-square) and optimization (Least Squares).
+# --- SCIENTIFIC COMPUTING ---
+# Statistical tests (Z-score, Chi-square) and equation optimization.
 scipy>=1.10.0
 
-# --- ASTRONOMY TOOLKIT / FERRAMENTAS ASTRONÔMICAS ---
-# Reading .FITS files (SDSS), celestial coordinates (RA/Dec), and unit conversion.
+# --- ASTRONOMY TOOLKIT ---
+# Reading .FITS files, transforming celestial coordinates (RA/Dec), and astrometry.
 astropy>=5.3.0
 
-# --- VISUALIZATION / VISUALIZAÇÃO ---
-# Generating histograms, skymaps, and correlation plots.
+# --- VISUALIZATION ---
+# Generating histograms, skymaps, and cosmological predictive plots.
 matplotlib>=3.7.0
 
-# --- AUDIT REPORTING / RELATÓRIOS DE AUDITORIA ---
-# For automated generation of scientific PDF reports from the engine.
+# --- AUDIT REPORTING ---
+# For automated generation of scientific PDF audit reports from the engine.
 fpdf>=1.7.2
 
-# --- INTERACTIVE ENGINE / MOTOR INTERATIVO ---
-# Required for running the TRR Cosmological Engine (Streamlit app).
+# --- INTERACTIVE ENGINE ---
+# Required for running the RRT Cosmological Engine (Streamlit application).
 streamlit>=1.25.0
 
-# --- OPTIONAL MODULES / MÓDULOS OPCIONAIS ---
-# For CMB multipole analysis (Planck Sat) and HEALPix mapping.
+# --- OPTIONAL MODULES ---
+# For CMB multipole analysis (Planck Satellite) and HEALPix mapping.
 # healpy>=1.16.0
