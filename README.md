@@ -25,7 +25,7 @@ A tese está estruturada em **quatro volumes**, estabelecendo que o universo ope
 3. **Fase 3 (Viscosa):** Regime de vácuo profundo (Vazios Cósmicos) onde o fluxo temporal impulsiona a expansão acelerada e gera a Anisotropia Topológica.
 
 ### 🇺🇸 English
-This repository hosts the computational infrastructure and statistical audit algorithms used to validate the **Referential Relativity Theory (RRT)**. RRT proposes a hydrodynamic reformulation of spacetime based on **Thermodynamic Phase Transitions**. The theory replaces hypothetical entities (Dark Matter and Dark Energy) with a viscous temporal field ($\mathcal{T}_{\mu\nu}$) whose interaction with matter is governed by local energy density ($\rho$).
+This repository hosts the computational infrastructure and statistical audit algorithms used to validate the **Referential Relativity Theory (RRT)**. RRT proposes a hydrodynamic reformulation of spacetime based on **Thermodynamic Phase Transitions**. The theory replaces hypothetical entities (Dark Matter and Dark Energy) with a dynamic, viscous temporal vector field ($\mathcal{T}_{\mu\nu}$), whose interaction with baryonic matter is strictly governed by the local energy density ($\rho$).
 
 The thesis is structured across **four volumes**, establishing that the universe operates in distinct regimes of causal viscosity:
 1. **Phase 1 (Saturated):** High-density regime (Solar System, CERN) where RRT is shielded, recovering General Relativity and the Standard Model.
@@ -55,12 +55,27 @@ The thesis is structured across **four volumes**, establishing that the universe
 Para garantir a **reprodutibilidade independente**, este projeto utiliza exclusivamente dados públicos brutos de repositórios oficiais. Nenhum dado foi pré-processado manualmente para favorecer a teoria.
 *To ensure **independent reproducibility**, this project exclusively uses raw public data from official repositories. No data was manually pre-processed to favor the theory.*
 
-**Instrução ao Auditor / Auditor Instruction:**
+**Fontes Oficiais e Variáveis Extraídas / Official Sources and Extracted Variables:**
 1. **Pantheon+SH0ES:** [GitHub Oficial](https://github.com/PantheonPlusSH0ES/Data_Release)
+   * *Extracted:* Redshift ($z$), Distance Moduli ($\mu$), and Covariance Matrices.
 2. **SDSS DR16Q:** [SDSS eBOSS Algorithms](https://www.sdss.org/dr16/algorithms/qso_catalog/)
+   * *Extracted:* Right Ascension (RA), Declination (DEC), and Redshift ($z$) for mapping the $51.73\sigma$ $\mathcal{T}_{\mu\nu}$ phase gradient.
 3. **SPARC Database:** [Case Western Reserve University](http://astroweb.cwru.edu/SPARC/)
-4. **SLACS Lens Survey:** [Sloan Lens ACS Survey](https://www.slacs.org/) *(Massa Total Salpeter IMF)*
-5. **Gaia Stellar Streams:** ESA/Gaia Consortium *(Pericentros e Apocentros Astrométricos)*
+   * *Extracted:* Radius ($Rad$), Observed Velocity ($V_{obs}$), Gas Velocity ($V_{gas}$), and Disk Velocity ($V_{disk}$) for hydrodynamic drag calculations.
+4. **SLACS Lens Survey:** [Sloan Lens ACS Survey](https://www.slacs.org/)
+   * *Extracted:* Salpeter IMF Total Mass, Source/Lens Redshifts.
+5. **Gaia Stellar Streams:** [ESA/Gaia Consortium](https://www.cosmos.esa.int/web/gaia/data-releases)
+   * *Extracted:* Astrometric Pericenters and Apocenters for viscous shear predictions.
+6. **Planck Legacy Archive (ESA):** [ESA Planck Public Data](https://pla.esac.esa.int/)
+   * *Extracted:* CMB temperature anisotropies and polarization data.
+7. **LAGEOS-2 (ILRS):** [International Laser Ranging Service](https://ilrs.gsfc.nasa.gov/)
+   * *Extracted:* Satellite Laser Ranging (SLR) orbital residuals for Phase 1 null-tests.
+8. **CMS/CERN Open Data:** [CERN Open Data Portal](https://opendata.cern.ch/)
+   * *Extracted:* High-density collision events for Phase 1 shielding validation.
+9. **JWST Early Release Science:** [MAST Portal (STScI)](https://mast.stsci.edu/)
+   * *Extracted:* Spectroscopic redshifts ($z > 5$) and structural maturity indicators.
+10. **LIGO/Virgo/KAGRA (GWTC):** [GWOSC](https://gwosc.org/)
+    * *Extracted:* Luminosity Distance ($D_L$), RA, and DEC from O4 alerts.
 
 ---
 
@@ -73,7 +88,7 @@ Para garantir a **reprodutibilidade independente**, este projeto utiliza exclusi
 | `Motor TRR (Aba Correntes)` | Correntes Gaia | **Fase 2** | **Predição de Coordenadas Exatas de Ruptura** |
 | `trr_pantheon_plus_gradient.py` | Pantheon+ | **Fase 2/3** | **25.47σ (Gradient)** |
 | `trr_sparc_rotation_curves.py` | SPARC | **Fase 2** | **1.33% Error (Residual)** |
-| `trr_ruptura_cronologia.py` | Quasars $z > 5$ | **Fase 3** | **100% Causal Violation (ΛCDM)** |
+| `trr_ruptura_cronologia.py` | Quasars $z > 5$ | **Fase 3** | **100% Causal Violation ($\Lambda$CDM)** |
 | `trr_lageos_pnb_shielding.py` | LAGEOS-2 | **Fase 1** | **0.22σ (Shielded / Null)** |
 
 > **Nota de Auditoria:** Os resultados preditivos para Lentes Gravitacionais (SLACS) dispensam o uso de halo escuro e exigem estritamente a "Massa Bariônica Total" (Salpeter) como matriz de arrasto fluido, provando a ruptura da Relatividade Geral Clássica na deflexão óptica.
