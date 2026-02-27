@@ -87,7 +87,7 @@ LANG = {
         "info_str": "💡 La TRR mapea la fuerza de marea del vacío, revelando las coordenadas del falso sub-halo.",
         "pred_zs": "Redshift z_S Previsto", "loc_gap": "📌 Coordenadas del Falso Sub-halo", "no_gap": "Ninguna ruptura crítica",
         "pdf_h1": "TEORIA DE LA RELATIVIDAD REFERENCIAL (TRR)", "pdf_h2": "Reporte de Auditoria Automatizada", "pdf_footer": "Documento generado por el Motor Cosmologico TRR.",
-        "pdf_title_dyn": "AUDITORIA CIENTIFICA - DINAMICA", "pdf_title_opt": "AUDITORIA CIENTIFICA - OPTICA", "pdf_title_red": "AUDITORIA CIENTIFICA - REDSHIFT", "pdf_title_str": "AUDITORIA CIENTIFICA - CORRIENTES",
+        "pdf_title_dyn": "AUDITORIA CIENTIFICA - DINAMICA", "pdf_title_opt": "AUDITORIA CIENTIFICA - OPTICA", "pdf_title_red": "AUDITORIA CIENTIFICA - REDSHIFT", "pdf_title_str": "AUDITORIA CIENTIFICA - CORRENTES",
         "rep_dyn_text": "DICTAMEN TÉCNICO:\n1. La masa bariónica genera solo {vbar:.2f} km/s.\n2. La TRR calcula la fricción topológica. Aplicando Beta (0.028006), el arrastre eleva a {vtrr:.2f} km/s. RESULTADO: Precisión empírica de {prec:.2f}% sin Materia Oscura.",
         "rep_opt_text": "DICTAMEN TÉCNICO:\nLa TRR aplica Refracción Temporal (eta_C = {etac:.5f}). El retraso de fase amplía el anillo a {ttrr:.2f} arcsec. Precisión empírica: {prec:.2f}%.",
         "rep_red_text": "DICTAMEN PREDITIVO (CIEGO ESTRICTO):\n1. DESAFÍO: Motor TRR bloqueó la masa total como límite de fluido espacial absoluto.\n2. PREDICCIÓN: La ecuación convergió y predice la galaxia fuente en z_S = {zs_pred:.4f}. RESULTADO: Algoritmo puro aislado de Materia Oscura.",
@@ -113,7 +113,7 @@ LANG = {
         "rep_dyn_text": "RAPPORT TECHNIQUE:\n1. Masse baryonique génère {vbar:.2f} km/s.\n2. La TRR élève la vitesse à {vtrr:.2f} km/s grâce à Beta. Précision empirique: {prec:.2f}%.",
         "rep_opt_text": "RAPPORT TECHNIQUE:\nLa TRR applique Réfraction Temporelle (eta_C = {etac:.5f}). Déviation amplifiée à {ttrr:.2f} arcsec. Précision: {prec:.2f}%.",
         "rep_red_text": "PRÉDICTION AVEUGLE:\nLa TRR a bloqué la masse totale comme limite fluide absolue et prédit la Source à z_S = {zs_pred:.4f}. Convergence pure sans Matière Noire.",
-        "rep_str_text": "MÉCANIQUE FLUIDE:\nLa TRR a détecté un Cisaillement Visqueux critique dans la zone de {loc_str}. Les halos noirs sont obsolètes."
+        "rep_str_text": "MÉCANIQUE FLUIDA:\nLa TRR a détecté un Cisaillement Visqueux critique dans la zone de {loc_str}. Les halos noirs sont obsolètes."
     },
     "DE": {
         "code": "DE", "btn_enter": "RRT betreten", "welcome": "Wählen Sie Ihre Sprache",
@@ -152,7 +152,7 @@ LANG = {
         "info_red": "💡 La TRR utilizza la Massa Totale Assoluta per prevedere il tempo-spazio della Sorgente (z_S).",
         "info_str": "💡 La TRR mappa la forza di marea del vuoto, rivelando le coordinate esatte.",
         "pred_zs": "Redshift z_S Previsto", "loc_gap": "📌 Coordinate di Rottura", "no_gap": "Nessuna rottura critica",
-        "pdf_h1": "TEORIA DELLA RELATIVITA REFERENZIALE (TRR)", "pdf_h2": "Rapporto di Audit Automatizzato", "pdf_footer": "Documento generato dal Motore Cosmologico TRR.",
+        "pdf_h1": "TEORIA DELLA RELATIVITA REFERENZIALE (TRR)", "pdf_h2": "Rapporto di Audit Automatizzato", "pdf_footer": "Document generato dal Motore Cosmologico TRR.",
         "pdf_title_dyn": "AUDIT SCIENTIFICO - DINAMICA", "pdf_title_opt": "AUDIT SCIENTIFICO - OTTICA", "pdf_title_red": "AUDIT SCIENTIFICO - REDSHIFT", "pdf_title_str": "AUDIT SCIENTIFICO - CORRENTI",
         "rep_dyn_text": "DIAGNOSI:\nLa massa genera solo {vbar:.2f} km/s. La TRR eleva a {vtrr:.2f} km/s. Precisione empirica: {prec:.2f}%.",
         "rep_opt_text": "DIAGNOSI:\nRifrazione Temporale (eta_C = {etac:.5f}). La TRR amplifica la deviazione a {ttrr:.2f} arcsec. Precisione: {prec:.2f}%.",
@@ -316,7 +316,8 @@ def gerar_pdf(modulo, dict_dados, L_original):
 # ==========================================
 st.set_page_config(page_title="Motor TRR / RRT Engine", layout="centered")
 
-if 'idioma_selecionado' not in st.session_state: st.session_state['idioma_selecionado'] = None
+if 'idioma_selecionado' not in st.session_state: 
+    st.session_state['idioma_selecionado'] = None
 
 if st.session_state['idioma_selecionado'] is None:
     st.markdown("<h2 style='text-align: center;'>🌍 Cosmological Engine</h2>", unsafe_allow_html=True)
@@ -330,11 +331,24 @@ else:
     L = LANG.get(st.session_state['idioma_selecionado'], LANG["EN"])
     
     with st.sidebar:
+        st.markdown(f"**{L['author_prefix']}:** Jean Cortez\n\n*{L['theory_name']}*")
+        st.markdown("---")
+        with st.expander("🗂️ Data Provenance & Official Catalogs", expanded=False):
+            st.markdown("""
+            **To ensure independent reproducibility, this engine processes raw data from:**
+            * SDSS DR16Q
+            * SPARC (CWRU)
+            * SLACS Survey
+            * ESA Gaia
+            * JWST/MAST
+            * LIGO/Virgo
+            
+            *⚠️ No ad-hoc dark matter parameters are injected into this engine.*
+            """)
+        st.markdown("---")
         if st.button("⬅️ Idioma / Language"):
             st.session_state['idioma_selecionado'] = None
             st.rerun()
-        st.markdown("---")
-        st.markdown(f"**{L['author_prefix']}:** Jean Cortez\n\n*{L['theory_name']}*")
 
     st.title(L["title"])
     aba1, aba2, aba3, aba4 = st.tabs([L["tab1"], L["tab2"], L["tab3"], L["tab4"]])
@@ -426,10 +440,8 @@ else:
                 D_L = calcular_D_A(0, r_zl)
                 melhor_erro, zs_pred = float('inf'), 0
                 
-                # A MASSA É ABSOLUTA E A BUSCA VAI ATÉ O LIMITE DO UNIVERSO
                 M_bar_kg = (r_mest * (7.0 if r_cluster else 1.0)) * 1e11 * M_SOL 
                 
-                # O Teto foi removido (agora vai até z = 50.0, além do universo observável)
                 for zs_test in np.arange(r_zl + 0.01, 50.0, 0.05):
                     D_S, D_LS = calcular_D_A(0, zs_test), calcular_D_A(r_zl, zs_test)
                     if D_S <= 0: continue
@@ -443,7 +455,6 @@ else:
                         melhor_erro = erro
                         zs_pred = zs_test
                 
-                # Refinamento fino da predição para maior precisão
                 best_coarse = zs_pred
                 melhor_erro = float('inf')
                 for zs_test in np.arange(max(r_zl + 0.01, best_coarse - 0.1), min(best_coarse + 0.1, 50.0), 0.005):
@@ -459,7 +470,6 @@ else:
                         melhor_erro = erro
                         zs_pred = zs_test
 
-                # Limite do gráfico dinâmico (para não distorcer visualmente se der z=50)
                 limite_grafico = min(zs_pred * 1.5, 30.0) if zs_pred > 10 else zs_pred * 1.5
                 z_vals = np.linspace(r_zl + 0.01, max(limite_grafico, r_zl + 1), 40)
                 t_class, t_trr = [], []
@@ -520,4 +530,3 @@ else:
             st.success(f"**{L['loc_gap']}:** {loc_str_ui}")
             with st.expander(L["details"]): st.info(L["rep_str_text"].format(loc_str=loc_str_ui, **res))
             st.download_button(L["pdf_btn"], data=gerar_pdf("str", res, L), file_name="Report_Streams.pdf", mime="application/pdf", use_container_width=True, key="p4")
-
