@@ -7,7 +7,7 @@
 Para facilitar a auditoria imediata sem necessidade de ambiente Python local, disponibilizamos o Motor TRR (Streamlit App).
 *To facilitate immediate auditing without the need for a local Python environment, we provide the RRT Engine (Streamlit App).*
 
-**🔗 Acesso / Access:** [https://trr-motor.streamlit.app/](https://trr-motor.streamlit.app/)
+**🔗 Acesso / Access:** [https://rrt-motor.streamlit.app/](https://rrt-motor.streamlit.app/)
 
 **Função / Function:** Validação de Dinâmica Galáctica (SPARC), Óptica Cosmológica Integrada, Predição Cega de Redshift (SLACS) e Predição Determinística de Ruptura em Correntes Estelares (Gaia). O motor emite relatórios técnicos de auditoria em PDF que quantificam as falhas matemáticas do modelo $\Lambda$CDM.
 *Validation of Galactic Dynamics (SPARC), Integrated Cosmological Optics, Blind Redshift Prediction (SLACS), and Deterministic Stream Rupture Prediction (Gaia). The engine generates technical PDF audit reports quantifying the mathematical failures of the $\Lambda$CDM model.*
