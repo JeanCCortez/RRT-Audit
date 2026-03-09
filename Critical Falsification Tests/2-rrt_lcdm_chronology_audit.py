@@ -108,7 +108,7 @@ def run_chronology_stress_audit():
         anomalies = df[(df['delta_z'] > 0.05) & (df['Z_VI'] > 2.0)]
         
         print(f"-> Total Quasars analyzed:    {len(df)}")
-        print(f"-> Confirmed Phase Anomalies: {len(anomalias)}")
+        print(f"-> Confirmed Phase Anomalies: {len(anomalies)}")
         print("RRT INTERPRETATION: Viscous vacuum 'drags' metal-line photons differently.")
 
     print("\n" + "="*80)
@@ -119,3 +119,4 @@ def run_chronology_stress_audit():
 
 if __name__ == "__main__":
     run_chronology_stress_audit()
+
