@@ -10,8 +10,7 @@ OMEGA_P = 1128.0
 DIRECAO_NOMINAL = 148.9
 
 def to_native(array):
-    if array.dtype.byteorder not in ('=', '|'):
-        return array.byteswap().view(array.dtype.newbyteorder('='))
+    return array.byteswap().view(array.dtype.newbyteorder('='))
     return array
 
 def residuo_trr(params, ra, z, mag_res):
@@ -79,3 +78,4 @@ def executar_jackknife(caminho, n_cortes=50):
 
 if __name__ == "__main__":
     executar_jackknife(r"C:\Users\JM\tese\novos_testes\DR16Q_Superset_v3.fits")
+
