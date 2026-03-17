@@ -31,6 +31,11 @@ fpdf>=1.7.2
 # Required for running the RRT Cosmological Engine (Streamlit application).
 streamlit>=1.25.0
 
+# --- INTERACTIVE NOTEBOOKS ---
+# Required to run the RRT_Official_Audit_Notebook.ipynb locally.
+jupyterlab>=4.0.0
+ipykernel>=6.25.0
+
 # --- OPTIONAL MODULES ---
 # For CMB multipole analysis (Planck Satellite) and HEALPix mapping.
 # healpy>=1.16.0
