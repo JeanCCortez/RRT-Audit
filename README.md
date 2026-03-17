@@ -9,28 +9,28 @@ Para facilitar a auditoria imediata sem necessidade de ambiente Python local, di
 
 **🔗 Acesso / Access:** [https://rrt-motor.streamlit.app/](https://rrt-motor.streamlit.app/)
 
-**Função / Function:** Validação de Dinâmica Galáctica (SPARC), Óptica Cosmológica Integrada, Predição Cega de Redshift (SLACS) e Predição Determinística de Ruptura em Correntes Estelares (Gaia). O motor emite relatórios técnicos de auditoria em PDF que quantificam as falhas matemáticas do modelo $\Lambda$CDM.
-*Validation of Galactic Dynamics (SPARC), Integrated Cosmological Optics, Blind Redshift Prediction (SLACS), and Deterministic Stream Rupture Prediction (Gaia). The engine generates technical PDF audit reports quantifying the mathematical failures of the $\Lambda$CDM model.*
+**Função / Function:** Validação de Dinâmica Galáctica (SPARC), Óptica Cosmológica Integrada, Predição Cega de Redshift (SLACS) e Predição Determinística de Ruptura em Correntes Estelares (Gaia). O motor emite relatórios técnicos de auditoria em PDF que quantificam as falhas matemáticas do modelo $\Lambda$CDM baseadas puramente na viscosidade do espaço-tempo.
+*Validation of Galactic Dynamics (SPARC), Integrated Cosmological Optics, Blind Redshift Prediction (SLACS), and Deterministic Stream Rupture Prediction (Gaia). The engine generates technical PDF audit reports quantifying the mathematical failures of the $\Lambda$CDM model based purely on spacetime viscosity.*
 
 ---
 
 ## Descrição da Obra / Work Description
 
 ### 🇧🇷 Português
-Este repositório contém a infraestrutura computacional e os algoritmos de auditoria empírica utilizados para validar a **Teoria da Relatividade Referencial (TRR)**. A TRR propõe uma reformulação hidrodinâmica do espaço-tempo baseada em **Transições de Fase Termodinâmicas**. A teoria substitui entidades hipotéticas (Matéria e Energia Escuras) por um campo temporal viscoso ($\mathcal{T}_{\mu\nu}$) cuja interação com a matéria é governada pela densidade local de energia ($\rho$).
+Este repositório contém a infraestrutura computacional e os algoritmos de auditoria empírica rigorosa utilizados para validar a **Teoria da Relatividade Referencial (TRR)**. A TRR propõe uma reformulação hidrodinâmica do espaço-tempo baseada em **Transições de Fase Termodinâmicas**. A teoria substitui entidades hipotéticas (Matéria e Energia Escuras) por um campo temporal viscoso ($\mathcal{T}_{\mu\nu}$) cuja interação com a matéria é estritamente governada pela densidade local de energia ($\rho$).
 
-A tese está estruturada em **quatro volumes**, estabelecendo que o universo opera em regimes distintos de viscosidade causal:
-1. **Fase 1 (Saturada):** Regime de alta densidade (Sistema Solar, CERN) onde a TRR é blindada, recuperando a Relatividade Geral e o Modelo Padrão.
-2. **Fase 2 (Transição):** Regime de densidade crítica (Halos Galácticos e Lentes Gravitacionais) onde a viscosidade ($\beta$) gera o arrasto que sustenta órbitas e amplifica a deflexão óptica.
-3. **Fase 3 (Viscosa):** Regime de vácuo profundo (Vazios Cósmicos) onde o fluxo temporal impulsiona a expansão acelerada e gera a Anisotropia Topológica.
+A tese está estruturada em **quatro volumes**, estabelecendo que o universo opera numa Escada de Transição de Fase (Phase Ladder) com diferentes regimes de viscosidade causal:
+1. **Fase 1 (Saturada):** Regime de alta densidade (Sistema Solar, CERN) onde o fluxo causal sofre estagnação (0% de Ativação), blindando a TRR e recuperando perfeitamente a Relatividade Geral e o Modelo Padrão.
+2. **Fase 2 (Transição):** Regime de densidade crítica (Halos Galácticos e Lentes Gravitacionais) onde a viscosidade bariônica ($\beta$) gera o arrasto que sustenta órbitas espirais e amplifica a deflexão óptica.
+3. **Fase 3 (Viscosa):** Regime de vácuo profundo (Vazios Cósmicos) onde o fluxo temporal livre impulsiona a expansão e gera a Anisotropia Topológica do eixo de Cortez.
 
 ### 🇺🇸 English
-This repository hosts the computational infrastructure and empirical audit algorithms used to validate the **Referential Relativity Theory (RRT)**. RRT proposes a hydrodynamic reformulation of spacetime based on **Thermodynamic Phase Transitions**. The theory replaces hypothetical entities (Dark Matter and Dark Energy) with a dynamic, viscous temporal vector field ($\mathcal{T}_{\mu\nu}$), whose interaction with baryonic matter is strictly governed by the local energy density ($\rho$).
+This repository hosts the computational infrastructure and rigorous empirical audit algorithms used to validate the **Referential Relativity Theory (RRT)**. RRT proposes a hydrodynamic reformulation of spacetime based on **Thermodynamic Phase Transitions**. The theory replaces hypothetical entities (Dark Matter and Dark Energy) with a dynamic, viscous temporal vector field ($\mathcal{T}_{\mu\nu}$), whose interaction with baryonic matter is strictly governed by the local energy density ($\rho$).
 
-The thesis is structured across **four volumes**, establishing that the universe operates in distinct regimes of causal viscosity:
-1. **Phase 1 (Saturated):** High-density regime (Solar System, CERN) where RRT is shielded, recovering General Relativity and the Standard Model.
-2. **Phase 2 (Transition):** Critical density regime (Galactic Halos and Gravitational Lenses) where viscosity ($\beta$) generates the drag that sustains orbits and amplifies optical deflection.
-3. **Phase 3 (Viscous):** Deep vacuum regime (Cosmic Voids) where temporal flow drives accelerated expansion and generates Topological Anisotropy.
+The thesis is structured across **four volumes**, establishing that the universe operates on a Phase Transition Ladder with distinct regimes of causal viscosity:
+1. **Phase 1 (Saturated):** High-density regime (Solar System, CERN) where causal flow stagnates (0% Activation), shielding RRT and perfectly recovering General Relativity and the Standard Model.
+2. **Phase 2 (Transition):** Critical density regime (Galactic Halos and Gravitational Lenses) where baryonic viscosity ($\beta$) generates the drag that sustains spiral orbits and amplifies optical deflection.
+3. **Phase 3 (Viscous):** Deep vacuum regime (Cosmic Voids) where free temporal flow drives expansion and generates the Topological Anisotropy of the Cortez axis.
 
 ---
 
@@ -40,7 +40,7 @@ The thesis is structured across **four volumes**, establishing that the universe
     * Algoritmos de processamento do catálogo Pantheon+ para extração do gradiente causal via Hubble Detrending.
 
 2. **Cosmology Quasars (`/2_Cosmology_Quasars`):**
-    * Scripts de validação estratigráfica da Anisotropia Topológica no SDSS DR16Q e cálculo da quebra de causalidade no crescimento de buracos negros.
+    * Scripts de validação estratigráfica da Anisotropia Topológica no SDSS DR16Q (via Jackknife com Sigma Clipping orgânico) e cálculo da quebra de causalidade cronológica no crescimento de buracos negros.
 
 3. **Orbital and Gravitational Mechanics (`/3_Orbital_and_Gravitational_Mechanics`):**
     * Testes de nulidade em ambientes de alta densidade (LAGEOS-2). Confirmação do Princípio da Neutralidade Bariônica (BNP) e validação do viés de fase na onda gravitacional GW170817.
@@ -76,12 +76,12 @@ Para garantir a **reprodutibilidade independente** e absoluta transparência cie
 | `trr_sdss_dr16q_topological_audit.py` | SDSS DR16Q | **Fase 3** | **30.36σ (Anisotropy)** |
 | `trr_pantheon_plus_full_audit.py` | Pantheon+ | **Fase 3** | **23.24σ (Gradient)** |
 | `trr_sparc_rotation_curves.py` | SPARC | **Fase 2** | **1.33% Error (Residual)** |
-| `Motor TRR (Aba Redshift)` | Lentes SLACS | **Fase 2** | **Convergiu sem Matéria Escura ($\Delta z \le 0.14$)** |
-| `trr_lageos2_pnb_shielding_audit.py` | LAGEOS-2 | **Fase 1** | **0.22σ (Shielded / Null)** |
-| `5-trr_blackhole_growth_causality_audit.py` | Quasars $z > 5$ | **Fase 3** | **Causal Violation proven in $\Lambda$CDM** |
+| `Motor TRR (Aba Redshift)` | Lentes SLACS | **Fase 2** | **Convergiu sem Matéria Escura** |
+| `trr_lageos2_pnb_shielding_audit.py` | LAGEOS-2 | **Fase 1** | **0% Activation (Shielded)** |
+| `5-trr_blackhole_growth_causality_audit.py` | Quasars $z > 5$ | **Fase 3** | **100% Failure Rate in $\Lambda$CDM (3,978 violations)** |
 | `trr_jwst_cosmos_audit.py` | Galáxias JWST | **Fase 3** | **Anomaly Resolved via Causal Dilation** |
 
-> **Nota de Auditoria:** Os resultados preditivos para Lentes Gravitacionais (SLACS) dispensam o uso de halo escuro e exigem estritamente a "Massa Bariônica Total" como matriz de arrasto fluido, provando a ruptura da Relatividade Geral Clássica na deflexão óptica. O Motor RRT consolida essas provas.
+> **Nota de Auditoria:** Os resultados preditivos para Lentes Gravitacionais (SLACS) dispensam o uso de halo escuro e exigem estritamente a "Massa Bariônica Total" como matriz de arrasto fluido, provando a ruptura da Relatividade Geral Clássica na deflexão óptica. O Motor RRT consolida essas provas de forma interativa.
 
 ---
 
