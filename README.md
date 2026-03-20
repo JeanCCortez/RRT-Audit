@@ -1,6 +1,8 @@
 # Teoria da Relatividade Referencial (TRR) - Repositório de Auditoria Científica
 # Referential Relativity Theory (RRT) - Scientific Audit Repository
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19058853.svg)](https://doi.org/10.5281/zenodo.19058853)
+
 ---
 
 ## 🚀 Motor Cosmológico TRR / RRT Cosmological Engine (Interactive Audit)
@@ -14,7 +16,7 @@ Para facilitar a auditoria imediata sem necessidade de ambiente Python local, di
 
 ---
 
-## Descrição da Obra / Work Description
+## 📖 Descrição da Obra / Work Description
 
 ### 🇧🇷 Português
 Este repositório contém a infraestrutura computacional e os algoritmos de auditoria empírica rigorosa utilizados para validar a **Teoria da Relatividade Referencial (TRR)**. A TRR propõe uma reformulação hidrodinâmica do espaço-tempo baseada em **Transições de Fase Termodinâmicas**. A teoria substitui entidades hipotéticas (Matéria e Energia Escuras) por um campo temporal viscoso ($\mathcal{T}_{\mu\nu}$) cuja interação com a matéria é estritamente governada pela densidade local de energia ($\rho$).
@@ -85,12 +87,19 @@ Para garantir a **reprodutibilidade independente** e absoluta transparência cie
 
 ---
 
-### 🛠️ Requisitos Técnicos / Technical Requirements
-Utilize **Python 3.11+** com as bibliotecas: `streamlit`, `numpy`, `scipy`, `pandas`, `astropy`, `matplotlib` e `fpdf`.
+## 📚 Citação e Indexação Acadêmica / Citation and Indexing
 
----
-*"Time is not a line, but a spiral precessing under the weight of eternity itself."*
+Para citar a Teoria da Relatividade Referencial (TRR), os dados de auditoria associados ou o código-fonte em artigos acadêmicos, por favor utilize o DOI oficial registrado via Zenodo. Isso garante o rastreamento adequado no Google Scholar e outras bases de dados.
+*To cite the Referential Relativity Theory (RRT), the associated audit data, or the source code in academic papers, please use the official DOI registered via Zenodo. This ensures proper tracking on Google Scholar and other databases.*
 
-**Autor / Author:** Jean Coutinho Cortez  
-**Local / Location:** Rio de Janeiro, Brasil 🇧🇷  
-**Data / Date:** Março / March 2026
+**BibTeX:**
+```bibtex
+@misc{cortez_2026_rrt,
+  author       = {Cortez, Jean Coutinho},
+  title        = {Referential Relativity Theory (RRT) - Scientific Audit Repository},
+  month        = mar,
+  year         = 2026,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.19058853},
+  url          = {[https://doi.org/10.5281/zenodo.19058853](https://doi.org/10.5281/zenodo.19058853)}
+}
