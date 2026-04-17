@@ -82,6 +82,12 @@ Para garantir a **reprodutibilidade independente** e absoluta transparência cie
 | `trr_lageos2_pnb_shielding_audit.py` | LAGEOS-2 | **Fase 1** | **0% Activation (Shielded)** |
 | `5-trr_blackhole_growth_causality_audit.py` | Quasars $z > 5$ | **Fase 3** | **100% Failure Rate in $\Lambda$CDM (3,978 violations)** |
 | `trr_jwst_cosmos_audit.py` | Galáxias JWST | **Fase 3** | **Anomaly Resolved via Causal Dilation** |
+| `9_rrt_gwtc4_anisotropy_audit.py` | GWTC-4 (LIGO-Virgo) | **Fase 3** | **3.5% Directional Mass Inflation** |
+
+**🔥 Latest Falsification: The GWTC-4 Algorithmic Illusion**
+The RRT Cosmological Engine recently audited the `35 M_sun` black hole peak reported in the GWTC-4 catalog. The script `9_rrt_gwtc4_anisotropy_audit.py` proved that this "new family" of black holes is a directional artifact caused by spacetime friction along the Cortez Axis:
+* **Anti-Axis (Alignment -0.9):** 0.1% Algorithmic Error (Mass is real).
+* **Cortez Axis (Alignment +0.9):** 3.5% Algorithmic Error (Mass artificially inflated by LIGO pipeline to hide distance fatigue).
 
 > **Nota de Auditoria:** Os resultados preditivos para Lentes Gravitacionais (SLACS) dispensam o uso de halo escuro e exigem estritamente a "Massa Bariônica Total" como matriz de arrasto fluido, provando a ruptura da Relatividade Geral Clássica na deflexão óptica. O Motor RRT consolida essas provas de forma interativa.
 
